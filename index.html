@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SkyEye?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stage" id="stage">
+    <div class="eye" id="eye" aria-hidden="true">
+      <img class="eye__sclera" src="imagens/esclera.png" alt="" draggable="false">
+      <img class="eye__pupil" id="pupil" src="imagens/pupila.png" alt="" draggable="false">
+    </div>
+  </main>
+
+  <section class="caption" aria-live="polite">
+    <p class="caption__text" id="caption"><span id="captionText"></span><span class="caption__cursor" id="captionCursor" aria-hidden="true"></span></p>
+  </section>
+
+  <nav class="controls" id="controls" aria-label="Falas">
+    <button type="button" class="neon-button" id="Botao1" data-index="0">Número.</button>
+    <button type="button" class="neon-button" id="Botao2" data-index="1">A árvore</button>
+    <button type="button" class="neon-button" id="Botao3" data-index="2">Onde estamos?</button>
+    <button type="button" class="neon-button" id="Botao4" data-index="3">Me fale.</button>
+    <button type="button" class="neon-button" id="Botao5" data-index="4">Resposta.</button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
